@@ -20,7 +20,7 @@ Template Name: RetailDetail Template
 ?>
         <div class="container detailWrap">
             <div class="detailLeft" style="background-repeat: no-repeat; background-size: contain; background-image: url('<?php echo $image; ?>');">
-                <!-- a html commend just for fun, let's get rid of it later -->
+                <!-- CHANGEEEEEEEEEED a html commend just for fun, let's get rid of it later -->
             </div>
             <div class="detailRight">
                 <div><?php echo $post->post_title; ?></div>
