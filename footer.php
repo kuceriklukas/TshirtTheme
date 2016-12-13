@@ -1,6 +1,6 @@
 <div class="footer">
 <!--
-test
+test Lukas added something here
 -->
             <div class="footLeft">
                 <h1>LOGO</h1>
