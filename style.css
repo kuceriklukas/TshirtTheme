@@ -1,0 +1,324 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 20-Nov-2016, 10:43:09
+    Author     : lilpoisson
+*/
+
+/* SPLASH */
+
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Oct-2016, 14:43:13
+    Author     : lilpoisson
+*/
+/*
+.splashBody{
+    
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.splashIt a { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    display: block;
+    
+}
+
+.splashIt a:first-child {
+    -webkit-clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+    
+    clip-path: polygon(0 0, 0 100vh, 100% 100vh);
+*/
+/*    background: #d6d6d6;
+    opacity: 0;*/
+    background: url('http://localhost/shirtshop/wp-content/uploads/2016/11/Haystacks.gif');
+    /*background-repeat: no-repeat;*/
+    background-size: 100% 100%;
+    border: 2px solid red;
+}
+
+
+.splashIt a:nth-child(2) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100vh);
+    clip-path: polygon(0 0, 100% 0, 100% 100vh);
+    /*background: #212121;
+    opacity: 1;*/
+/*
+    background: url('http://localhost/shirtshop/wp-content/uploads/2016/11/parallax2.jpg');
+*/
+    /*background-repeat: no-repeat;*/
+/*
+    background-size: 100% 100%;
+}
+*/
+
+/* RETAIL HOME */ 
+/*
+.bigImg1{
+    background-image: url('http://localhost/shirtshop/wp-content/uploads/2016/11/Haystacks.gif');
+    min-height: 100vh;
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    /*
+    -webkit-clip-path: polygon(0 0, 0 100vh, 100% 0);
+    
+    clip-path: polygon(0 0, 0 100vh, 100% 0); 
+    z-index: 0;
+    */
+/*    background: #d6d6d6;
+    opacity: 0;*/
+    
+    /*background-repeat: no-repeat;*/
+   /* 
+}
+.logo img{
+    position: absolute;
+    left: 35vw;
+    top: 30vh;
+    filter: invert(100%);
+    text-align: center;
+}
+
+
+.caption{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    
+    
+   
+}
+.caption span{
+    background-color: #111;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+    -webkit-clip-path: polygon(0 0, 0 100vh, 100% 0);
+    
+    clip-path: polygon(0 0, 0 100vh, 100% 0); 
+    
+    
+}
+
+.over1{
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    height: 400px;
+    
+    display: flex;
+}
+.over1Left{
+    width: 50%;
+   
+    
+}
+.over1Right{
+    width: 50%;
+    
+}
+.bigImg2{
+    background-image: url('http://localhost/shirtshop/wp-content/uploads/2016/11/parallax2.jpg');
+    min-height: 100vh;
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.over2{
+    color: #777;
+    background-color: white;
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    height: 450px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+.products{
+    width: 20%;
+    
+    height: auto;
+        
+}
+.bigImg3{
+    background-image: url('http://localhost/shirtshop/wp-content/uploads/2016/11/parallax3.jpg');
+    min-height: 100vh;
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer{
+    
+    height: 300px;
+    display: flex;
+    width: 100%;
+   
+    background-color: lightgray;
+    
+}
+.footLeft, .footMid, .footRight{
+    border: 1px solid white;
+    width: 33.33%;
+}
+.footer h1{
+    text-align: center;
+    color: darkslategrey;
+    line-height: 300px;
+}
+.products img{
+    width: 100%;
+    border: 1px solid black;
+}
+.products h3{
+    text-align: center;
+}
+*/
+/* PRODUCTS PAGE  */
+/*
+.navigate{
+    background-color: black;
+    height: 70px;
+}
+
+.navigate ul{
+    
+    list-style: none;
+    line-height: 70px;
+}
+.navigate li{
+    color: white;
+    display: inline;
+    margin-right: 10px;
+    font-size: 18px;
+}
+
+.bigImgProducts{
+    background-image: url('http://localhost/shirtshop/wp-content/uploads/2016/11/logoSquare72Transparent.png');
+    background-size: cover;
+    min-height: 50vh;
+    
+    position: relative;
+    opacity: 1;
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    
+    
+}
+.over1B{
+    color: #777;
+    background-color:rgba(245, 245, 245, 0.5);
+    
+    text-align: center;
+    padding: 50px 80px;
+    text-align: justify;
+    height: auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    
+  
+}
+.itemsWrap{
+     display: flex;
+    justify-content: space-around;
+    height: auto;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.items{
+    width: 250px;
+    height: 250px;
+   border: 1px solid black;
+   margin-bottom: 20px;
+   
+   justify-content: space-around;
+   background-color: lightblue;
+}
+
+.captionProducts{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    color: #000;
+}
+.captionProducts span{
+    background-color: red;
+    color: #fff;
+    padding: 18px;
+    font-size: 25px;
+    letter-spacing: 10px;
+}
+
+/* DETAILS PAGE */
+
+.detailWrap{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.detailLeft{
+    width: 50vw;
+    height: 500px;
+    border: 1px solid black;
+}
+#navBtns a{
+	padding-right: 8px;
+}
+.detailRight{
+    margin-left: 20px;
+    display: flex;
+    width: 50vw;
+    flex-direction: column;
+}
+.btn-group{
+    display: flex;
+}
+.colours{
+    display: flex;
+}
+.itemColour{
+    width:  70px;
+    height: 70px;
+    
+    color: red;
+    margin: 10px 10px;
+    border: 1px solid red;
+}
+
+*/
