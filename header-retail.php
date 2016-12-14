@@ -16,11 +16,6 @@ and open the template in the editor.
     </head>
     <body>
         <div class="navigate">
-            <ul>
-                <li><a href="http://localhost/TShirtShop/retailhome/">Home</a></li>
-                <li><a href="http://localhost/TShirtShop/retailproducts/">Shop</a></li>
-                <li>About</li>
-                <li>Contact</li>
-            </ul>
+            <?php wp_nav_menu(array('theme_location'=>'retail')); ?>
         </div>
  

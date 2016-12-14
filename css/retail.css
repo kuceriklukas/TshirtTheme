@@ -161,20 +161,25 @@ and open the template in the editor.
 /* PRODUCTS PAGE  */
 
 .navigate{
-    background-color: black;
+    background-color: #000;
     height: 70px;
 }
 
-.navigate ul{
-    
+.navigate ul{   
     list-style: none;
     line-height: 70px;
 }
 .navigate li{
-    color: white;
     display: inline;
     margin-right: 10px;
     font-size: 18px;
+}
+.navigate li > a {
+    color: #fff;
+    text-decoration: none;
+}
+.navigate li > a:hover {
+    color: #777;
 }
 
 .bigImgProducts{
