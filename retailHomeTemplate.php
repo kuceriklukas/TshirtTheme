@@ -16,28 +16,19 @@ Template Name: RetailHomeTemplate
         </div>
         
         <div class="over1">
-            <div class="over1Left">
-            <h1>TITLE</h1>
-            </div>
-            <div class="over1Right">
-            <p> 
+            <?php if (have_posts()): 
+                while (have_posts()): the_post(); ?>
 
-                Nascetur per nec posuere turpis, lectus nec libero 
-                turpis nunc at, sed posuere mollis ullamcorper libero 
-                ante lectus, blandit pellentesque a, magna turpis est 
-                sapien duis blandit dignissim. Viverra interdum mi 
-                magna mi, morbi sociis. Condimentum dui ipsum consequat 
-                morbi, curabitur aliquam pede, nullam vitae eu placerat
-                eget et vehicula. Varius quisque non molestie dolor, 
-                nunc nisl dapibus vestibulum at, sodales tincidunt mauris 
-                ullamcorper, dapibus pulvinar, in in neque risus odio. 
-                Accumsan fringilla vulputate at quibusdam sociis eleifend, 
-                aenean maecenas vulputate, non id vehicula lorem mattis, 
-                ratione interdum sociis ornare. Suscipit proin magna cras vel,
-                non sit platea sit, maecenas ante augue etiam maecenas, 
-                porta porttitor placerat leo.
-            </p>
-            </div>
+                <div class="over1Left">
+                    <h1><?php the_title(); ?></h1>
+                </div>
+                <div class="over1Right">
+                    <p> 
+                        <?php the_content(); ?>
+                    </p>
+                </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
         
         <div class="bigImg2">

@@ -19,13 +19,13 @@ Template Name: RetailDetail Template
 	$post = get_post($id);
 ?>
         <div class="container detailWrap">
-            <div class="detailLeft" style="background-repeat: no-repeat; background-size: contain; background-image: url('<?php echo $image; ?>');">
-                <!-- CHANGEEEEEEEEEED a html commend just for fun, let's get rid of it later -->
+            <div class="detailLeft">
+                <img src="<?php echo $image; ?>" />
             </div>
             <div class="detailRight">
-                <div><?php echo $post->post_title; ?></div>
+                <h2><?php echo $post->post_title; ?></h2>
                 <div><p><?php echo $post->post_content; ?></p></div>
-                <div><?php echo $price; ?></div>
+                <p>Price: <?php echo $price; ?></p>
                 <!--<div class="btn-group" role="group" aria-label="..." id="navBtns">
                     <a href="index.html" class="btn btn-default btn-lg" role="button">XS</a>
                     <a href="shop2.html" class="btn btn-default btn-lg" role="button">S</a>
@@ -33,19 +33,16 @@ Template Name: RetailDetail Template
                     <a href="shop2.html" class="btn btn-default btn-lg" role="button">L</a>
                     <a href="shop2.html" class="btn btn-default btn-lg" role="button">XL</a>
                 </div>-->
-                <select>
-                    <?php foreach ($sizes as $size) : ?>
-                        <option value="<?php echo $size; ?>"><?php echo $size; ?></option>
-                    <?php endforeach; ?>
-                </select>
+                <p>
+                Size:
+                    <select> 
+                        <?php foreach ($sizes as $size) : ?>
+                            <option value="<?php echo $size; ?>"><?php echo $size; ?></option>
+                        <?php endforeach; ?>
+                    </select>
+                </p>
                 <h3>Colours</h3>
                 <div class="colours">
-                    <!--<a href="#"><div class="itemColour" id="white">1</div></a>
-                    <a href="#"><div class="itemColour" id="grey">2</div></a>
-                    <a href="#"><div class="itemColour" id="charcoal">3</div></a>
-                    <a href="#"><div class="itemColour" id="blue">4</div></a>
-                    <a href="#"><div class="itemColour" id="green">5</div></a>
-                    <a href="#"><div class="itemColour" id="orange">5</div></a>-->
                     <?php foreach ($colors as $color) : ?> 
                         <a href="#"><div class="itemColour" id="<?php echo $color; ?>" style="background-color: <?php echo $color; ?>;"></div></a>
                     <?php endforeach; ?>
