@@ -42,18 +42,17 @@ Template Name: RetailHomeTemplate
                 <a href="http://localhost/TShirtShop/retailproducts/">
                    <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/Penguins.jpg"> 
                 </a>
-                <h3>TITLE</h3>
+                <h3>T-shirts</h3>
                     
             </div>
             <div class="products">
                 <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/Penguins.jpg">
-                <h3>TITLE</h3>
+                <h3>Bags</h3>
             </div>
             <div class="products">
                 <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/Penguins.jpg">
-                <h3>TITLE</h3>
+                <h3>Sweat shirts</h3>
             </div>
-            
         </div>
         <div class="bigImg3">
             <div class="caption">

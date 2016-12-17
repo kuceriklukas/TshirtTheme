@@ -143,17 +143,19 @@ select, button {
     color: #777;
     background-color: white;
     text-align: center;
-    padding: 0;
+    padding: 20px 0;
     min-height: 300px;
     position: relative;
     display: block;
 }
 .products{
-    width: 225px;;
+    width: 225px;
     display: inline-block;
-    margin: 20px 10px 0 10px;
+    margin: 10px 10px 10px 10px;
     height: auto;
-        
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #d7d7d7;     
 }
 .bigImg3{
     background-image: url('http://localhost/TShirtShop/wp-content/uploads/2016/12/desktop-apple-backgrounds.jpg');
@@ -166,22 +168,25 @@ select, button {
     background-size: cover;
 }
 .footer{
-    
-    height: 300px;
-    display: flex;
-    width: 100%;
-   
-    background-color: lightgray;
-    
+    background-color: lightgray; 
+    overflow: hidden;
+    height: auto;
+    display: block;
+    width: 100%; 
 }
-.footLeft, .footMid, .footRight{
-    border: 1px solid white;
-    width: 33.33%;
+.footLeft, .footRight{ 
+    display: block;
+    border-top: 2px solid #fff;
+    width: 100%;
+    min-height: 120px;
+    text-align: center;
+    color: darkslategrey;
 }
 .footer h1{
     text-align: center;
     color: darkslategrey;
-    line-height: 300px;
+    line-height: 35px;
+    font-size: 28px;
 }
 .products img{
     width: 100%;
@@ -235,7 +240,7 @@ select, button {
     color: #777;
     background-color:rgba(245, 245, 245, 0.5);
     
-    padding: 50px 10px;
+    padding: 50px 0;
     height: auto;
     text-align: left;
     display: block;
@@ -252,11 +257,17 @@ select, button {
 }
 .item-wrapper {
     display: inline-block;
-    width: 225px;
-    margin: 0 10px 20px 10px;
+    width: 130px;
+    padding: 20px 10px;
+    border: 1px solid #d7d7d7;
+    margin: 10px 5px;
+    vertical-align: top;
+    border-radius: 10px;
 }
+
 .item-wrapper > h3 {
     font-weight: normal;
+    font-size: 17px;
 }
 .items{
     width: 100%;
@@ -364,12 +375,39 @@ select, button {
         padding: 50px 80px;
     }
 
+    .item-wrapper {
+        width: 210px;
+    }
+
+    .item-wrapper h3 {
+        font-size: 20px;
+    }
+
+    .item-wrapper:hover {
+        border: 1px solid #929292;
+    }
+
     .over1Left{
         width: 49%;
     }
 
     .over1Right{
         width: 49%;
+    }
+
+    .footLeft, .footRight {
+        width: calc(50% - 1px);
+        border-top: 2px solid #fff;
+    }
+
+    .footLeft {
+        float: left;
+        border-right: 1px solid #fff;
+    }
+
+    .footRight {
+        float: right;
+        border-left: 1px solid #fff;
     }
 }
 
