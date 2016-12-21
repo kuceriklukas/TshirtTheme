@@ -86,3 +86,36 @@ and open the template in the editor.
 .WfooterDetails{
     width: 50%;
 }
+
+/* DETAILS */
+
+.details1{
+    width: 30%;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+   
+}
+.details1 img{
+    width: 80%
+}
+.details2{
+    width: 40%;
+    margin-top: 80px;
+}
+.details2 ul{
+    list-style: none;
+}
+.cols{
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    margin: 10px;
+    
+}
+.availableColours{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 80%;
+}
