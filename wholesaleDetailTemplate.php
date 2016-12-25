@@ -1,30 +1,11 @@
-<!DOCTYPE html>
-<!--
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
--->
-<html>
-    <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" type="text/css" media="all" href="style.css"/>
-    </head>
-    <body>
-        <div class="bodyWrap">
-            <div class="header">
-                    <img src="images/callblue.png"> 
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="detailWhole.html">Tshirts</a></li>
-                        <li>Hats</li>
-                        <li>Bags</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                        
-                    </ul>
-                </div>
+<?php
+/*
+Template Name: Wholesale Detail Template 
+*/
+?>
+<?php
+    get_header("wholesaleheader");
+?>
             <div class="details1">
                 <div>
                     <img src="images/blkBlank.jpg">
@@ -68,5 +49,6 @@ and open the template in the editor.
                 </ul>
             </div>
         </div>
-    </body>
-</html>
+<?php 
+    get_footer("wholesalefooter")
+?>

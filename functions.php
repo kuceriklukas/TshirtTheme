@@ -1,12 +1,16 @@
 <?php
 	function shirtTheme_enqueue_scripts() {
-	
-		if (basename(get_page_template()) == "splashTemplate.php") {
+
+		$pageTemplate = basename(get_page_template());
+		if ($pageTemplate == "wholesaleDetailTemplate.php" || $pageTemplate == "wholesaleHomeTemplate.php") {
+			wp_enqueue_style('customstyle', get_template_directory_uri() . "/css/wholesale.css", array(), "all");
+		}
+		else if ($pageTemplate == "retailDetailTemplate.php" || $pageTemplate == "retailHomeTemplate.php" || $pageTemplate == "retailProductTemplate.php") {
+			wp_enqueue_style('customstyle', get_template_directory_uri() . "/css/retail.css", array(), "all");
+		}
+		else if ($pageTemplate == "splashTemplate.php")	{
 			wp_enqueue_style('customstyle', get_template_directory_uri() . "/css/splash.css", array(), "all");
 		}
-		else {
-			wp_enqueue_style('customstyle', get_template_directory_uri() . "/css/retail.css", array(), "all");
-		}		
 	}
 
 	add_action('wp_enqueue_scripts', 'shirtTheme_enqueue_scripts');
@@ -19,6 +23,8 @@
 	}
 
 	add_action('init', 'shirtTheme_theme_setup');
+	add_theme_support('custom-background');
+	//add_theme_support('custom-header');
 
 ?>
 
