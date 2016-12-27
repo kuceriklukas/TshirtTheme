@@ -8,9 +8,45 @@ Template Name: RetailProductTemplate
 <?php
 	get_header('retail');
 
+    $imagesUrl = get_template_directory_uri() . "/images/"; 
+    $imageRetailParallax1 = "";
+    $imageRetailParallax2 = "";
+    $imageRetailParallax3 = "";
+
+    if (@getimagesize($imagesUrl . "retail-parallax-1.jpg")) {
+        $imageRetailParallax1 = $imagesUrl . "retail-parallax-1.jpg";
+    }  
+    else if (@getimagesize($imagesUrl . "retail-parallax-1.png")) {
+        $imageRetailParallax1 = $imagesUrl . "retail-parallax-1.png";
+    }
+    else {
+        $imageRetailParallax1 = $imagesUrl . "retail-parallax-1-default.jpg";
+    }
+
+    if (@getimagesize($imagesUrl . "retail-parallax-2.jpg")) {
+        $imageRetailParallax2 = $imagesUrl . "retail-parallax-2.jpg";
+    }  
+    else if (@getimagesize($imagesUrl . "retail-parallax-2.png")) {
+        $imageRetailParallax2 = $imagesUrl . "retail-parallax-2.png";
+    }
+    else {
+        $imageRetailParallax2 = $imagesUrl . "retail-parallax-2-default.jpg";
+    }
+
+    if (@getimagesize($imagesUrl . "retail-parallax-3.jpg")) {
+        $imageRetailParallax3 = $imagesUrl . "retail-parallax-3.jpg";
+    }  
+    else if (@getimagesize($imagesUrl . "retail-parallax-3.png")) {
+        $imageRetailParallax3 = $imagesUrl . "retail-parallax-3.png";
+    }
+    else {
+        $imageRetailParallax3 = $imagesUrl . "retail-parallax-3-default.jpg";
+    }
+
+
     if (have_posts()): 
         while (have_posts()): the_post(); ?>
-            <div class="bigImgProducts">
+            <div class="bigImgProducts" style="background-image: url('<?php echo $imageRetailParallax1; ?>');">
             
                 
                 <div class="captionProducts">
@@ -45,7 +81,7 @@ Template Name: RetailProductTemplate
         </div>
     
         
-        <div class="bigImgProducts">
+        <div class="bigImgProducts" style="background-image: url('<?php echo $imageRetailParallax2; ?>');">
            
             
             
@@ -57,7 +93,7 @@ Template Name: RetailProductTemplate
                     
             </div>  
             </div> 
-        <div class="bigImgProducts">
+        <div class="bigImgProducts" style="background-image: url('<?php echo $imageRetailParallax3; ?>');">
            
             
             

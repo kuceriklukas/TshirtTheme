@@ -20,6 +20,7 @@
 
 		register_nav_menu('retail' , 'The primary menu for retail section');
 		register_nav_menu('wholesale' , 'The primary menu for the wholesale section');
+		register_nav_menu('splashpage', 'The primary menu for the index page (one link to the retail home page, the other to the wholesale home page)');
 	}
 
 	add_action('init', 'shirtTheme_theme_setup');

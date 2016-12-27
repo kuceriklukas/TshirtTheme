@@ -1,25 +1,25 @@
-/*
-To change this license header, choose License Headers in Project Properties.
-To change this template file, choose Tools | Templates
-and open the template in the editor.
-*/
-/* 
-    Created on : 13-Dec-2016, 13:44:22
-    Author     : lilpoisson
-*/
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+h1 {
+    color: #2F4F4F;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+p {
+    font-size: 14px;
+}
+
 .bodyWrap{
     width: 100%;
-    display: flex;
-    
 }
 
 .header{
-    width: 15%;
-   height: 100vh;
+    vertical-align: top;
+    width: 200px;
+    display: inline-block;
     padding-right: 10px;
 }
 
@@ -47,10 +47,9 @@ body {
 }
 
 .body{
-    width: 100%;
-    display: flex;
-    
-    flex-direction: column;
+    vertical-align: top;
+    width: calc(100% - 215px);
+    display: inline-block;
 }
 .infoimg{
     margin-bottom: 20px;
@@ -61,22 +60,26 @@ body {
 }
 
 .items{
-    display: flex;
-    
-    height: 300px;
+    display: block;
+    overflow: hidden;
     margin-bottom: 10px;
 }
 .itemsPhoto{
-    width: 20%;
-    border-right: 1px black solid;
-    border: 2px black solid;
+    display: block;
+    float: left;
     background-image: url('images/T2.jpg');
     
 }
+
+.itemsPhoto > img {
+    max-width: 170px;
+}
+
 .itemsDescription{
-    width: 80%;
+    display: block;
+    float: left;
+    width: calc(100% - 191px);
     margin-left: 20px;
-    border: 2px black solid;
 }
 .items#ts{
     
@@ -91,53 +94,63 @@ body {
     
 }
 .Wfooter{
-    display: flex;
-    height:     300px;
-    
-    
-   
+    display: block;
+    margin-top: 30px;
+    border-top: 1px solid #AFAFAF;
 }
 .WfooterLogo{
-    width: 50%;
-    background-image: url('images/callblue.png');
-    background-repeat: no-repeat;
-    background-position: right;
+    width: 200px;
     margin-right: 20px;
-    
+    padding: 20px 0;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
 }
+
+.WfooterLogo > img{
+    width: 100%;
+}
+
 .WfooterDetails{
-    width: 50%;
+    width: calc(100% - 260px);
+    display: inline-block;
 }
 
 /* DETAILS */
 
 .details1{
-    width: 30%;
-    margin-top: 80px;
-    display: flex;
-    flex-direction: column;
-   
+    vertical-align: top;
+    display: inline-block;
+    width: calc((100% - 220px) / 2);
 }
 .details1 img{
-    width: 80%
+    width: calc(100% - 20px);
+    padding-right: 20px;
 }
 .details2{
-    width: 40%;
-    margin-top: 80px;
+    vertical-align: top;
+    display: inline-block;
+    width: calc((100% - 220px) / 2);
 }
 .details2 ul{
     list-style: none;
+    padding: 0;
 }
 .cols{
     width: 100px;
     height: 100px;
     background-color: blue;
-    margin: 10px;
-    
+    margin: 5px;
+    float: left;   
 }
 .availableColours{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    width: 80%;
+    padding: 0;
+}
+
+@media only screen and (min-width : 480px) {
+
+}
+
+@media only screen and (min-width : 768px) {
+
 }

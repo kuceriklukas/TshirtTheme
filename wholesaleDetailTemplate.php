@@ -8,7 +8,7 @@ Template Name: Wholesale Detail Template
 ?>
             <div class="details1">
                 <div>
-                    <img src="images/blkBlank.jpg">
+                    <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/krasne_hory.jpg">
                 </div>
                 <h1>Available Colours</h1>
                 <div class="availableColours">
@@ -26,7 +26,8 @@ Template Name: Wholesale Detail Template
                 </div>
             </div>
             <div class="details2">
-                <h1>Title</h1>
+                <h1
+                >Title</h1>
                 <p>Description.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
