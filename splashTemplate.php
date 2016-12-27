@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Splash Template 
+    Template Name: Splash Template 
 */
 
 ?>

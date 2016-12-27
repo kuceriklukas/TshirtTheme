@@ -9,7 +9,7 @@ h1 {
 }
 
 p {
-    font-size: 14px;
+    font-size: 15px;
 }
 
 .bodyWrap{
@@ -136,6 +136,17 @@ p {
     list-style: none;
     padding: 0;
 }
+
+.details {
+    vertical-align: top;
+    display: inline-block;
+    width: calc(100% - 220px);
+}
+
+.details img {
+    width: 100%;
+}
+
 .cols{
     width: 100px;
     height: 100px;

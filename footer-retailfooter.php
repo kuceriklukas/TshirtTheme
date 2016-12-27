@@ -1,4 +1,4 @@
-<div class="footer">
+        <div class="footer">
             <div class="footLeft">
                 <h1>About the company</h1>
                 <p>This should be editable from WordPress</p>

@@ -1,7 +1,7 @@
 
 <?php
 /*
-Template Name: RetailProductTemplate 
+    Template Name: Retail Product Template 
 */
 
 ?>
@@ -74,7 +74,7 @@ Template Name: RetailProductTemplate
                         </div>
                     </a>
             
-                    <h3><?php echo $post->post_title; ?></h3>   
+                    <h3><?php echo $post->post_title; ?></h3>
                 </div>
                 <?php endforeach; ?>
             </div>   

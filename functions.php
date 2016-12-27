@@ -2,10 +2,17 @@
 	function shirtTheme_enqueue_scripts() {
 
 		$pageTemplate = basename(get_page_template());
-		if ($pageTemplate == "wholesaleDetailTemplate.php" || $pageTemplate == "wholesaleHomeTemplate.php") {
+		if ($pageTemplate == "wholesaleDetailTemplate.php" || 
+			$pageTemplate == "wholesaleHomeTemplate.php" || 
+			$pageTemplate == "wholesaleContactTemplate.php" ||
+			$pageTemplate == "wholesaleAboutTemplate.php") {
 			wp_enqueue_style('customstyle', get_template_directory_uri() . "/css/wholesale.css", array(), "all");
 		}
-		else if ($pageTemplate == "retailDetailTemplate.php" || $pageTemplate == "retailHomeTemplate.php" || $pageTemplate == "retailProductTemplate.php") {
+		else if ($pageTemplate == "retailDetailTemplate.php" || 
+				 $pageTemplate == "retailHomeTemplate.php" || 
+				 $pageTemplate == "retailProductTemplate.php" ||
+				 $pageTemplate == "retailContactTemplate.php" ||
+				 $pageTemplate == "retailAboutTemplate.php" ) {
 			wp_enqueue_style('customstyle', get_template_directory_uri() . "/css/retail.css", array(), "all");
 		}
 		else if ($pageTemplate == "splashTemplate.php")	{

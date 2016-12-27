@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Wholesale Home Template 
+    Template Name: Wholesale Home Template 
 */
 ?>
 

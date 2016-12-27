@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: RetailHomeTemplate 
+    Template Name: Retail Home Template 
 */
 ?>
 

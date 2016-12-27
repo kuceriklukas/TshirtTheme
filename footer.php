@@ -1,7 +1,4 @@
-<div class="footer">
-<!--
-test Lukas added something here
--->
+        <div class="footer">
             <div class="footLeft">
                 <h1>LOGO</h1>
             </div>

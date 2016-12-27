@@ -1,6 +1,6 @@
 <?php
 /*
-Template Name: Wholesale Detail Template 
+    Template Name: Wholesale Detail Template 
 */
 ?>
 <?php
@@ -26,8 +26,7 @@ Template Name: Wholesale Detail Template
                 </div>
             </div>
             <div class="details2">
-                <h1
-                >Title</h1>
+                <h1>Title</h1>
                 <p>Description.</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                     sed do eiusmod tempor incididunt ut labore et dolore magna 
