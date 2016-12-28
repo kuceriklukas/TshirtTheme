@@ -8,6 +8,13 @@ h1 {
     font-weight: normal;
 }
 
+h2 {
+    color: #2F4F4F;
+    font-size: 25px;
+    font-weight: normal;
+    margin-top: 10px;
+}
+
 p {
     font-size: 15px;
 }
@@ -59,11 +66,25 @@ p {
     width: 100%;
 }
 
+.description {
+    padding: 0 0 10px 0;
+}
+
 .items{
     display: block;
     overflow: hidden;
     margin-bottom: 10px;
 }
+
+.items > a {
+    text-decoration: none;
+    color: #111111;
+}
+
+.items > a:hover > .itemsDescription > h2 {
+    text-decoration: underline;
+}
+
 .itemsPhoto{
     display: block;
     float: left;
@@ -150,7 +171,7 @@ p {
 .cols{
     width: 100px;
     height: 100px;
-    background-color: blue;
+    border: 1px solid #d7d7d7;
     margin: 5px;
     float: left;   
 }

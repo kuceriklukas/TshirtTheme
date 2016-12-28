@@ -26,13 +26,6 @@
                 <h2><?php echo $post->post_title; ?></h2>
                 <div><p><?php echo $post->post_content; ?></p></div>
                 <p>Price: <?php echo $price; ?></p>
-                <!--<div class="btn-group" role="group" aria-label="..." id="navBtns">
-                    <a href="index.html" class="btn btn-default btn-lg" role="button">XS</a>
-                    <a href="shop2.html" class="btn btn-default btn-lg" role="button">S</a>
-                    <a href="shop2.html" class="btn btn-default btn-lg" role="button">M</a>
-                    <a href="shop2.html" class="btn btn-default btn-lg" role="button">L</a>
-                    <a href="shop2.html" class="btn btn-default btn-lg" role="button">XL</a>
-                </div>-->
                 <p>
                 Size:
                     <select> 

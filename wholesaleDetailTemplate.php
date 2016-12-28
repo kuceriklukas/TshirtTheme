@@ -6,46 +6,38 @@
 <?php
     get_header("wholesaleheader");
 ?>
+<?php
+    $queryString = $_SERVER['QUERY_STRING'];
+    $array = explode('=', $queryString);
+    $id = $array[1];
+
+    $image = get_field( "image_url", $id );
+    $price = get_field( "price", $id );
+    $sizes = get_field( "size", $id );
+    $colors = get_field( "colour", $id );
+    $post = get_post($id);
+?>
             <div class="details1">
                 <div>
-                    <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/krasne_hory.jpg">
+                    <img src="<?php echo $image; ?>">
                 </div>
                 <h1>Available Colours</h1>
-                <div class="availableColours">
-                    
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
-                    <div class="cols"></div>
+                <div class="availableColours">   
+                    <?php foreach ($colors as $color) : ?>           
+                        <div class="cols" style="background-color: <?php echo $color; ?>"></div>
+                    <?php endforeach; ?>
                 </div>
             </div>
             <div class="details2">
-                <h1>Title</h1>
-                <p>Description.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna 
-                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation 
-                    ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-                    Duis aute irure dolor in reprehenderit in voluptate velit 
-                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                    occaecat cupidatat non proident, sunt in culpa qui officia
-                    deserunt mollit anim id est laborum.</p>
+                <h1><?php echo $post -> post_title; ?></h1>
+                <p><?php echo $post -> post_content; ?></p>
                
                 
                 <h1>Available sizes</h1>
                 <ul>
-                    <li>XS</li>
-                    <li>S</li>
-                    <li>M</li>
-                    <li>L</li>
-                    <li>XL</li>
-                    <li>XXL</li>
+                    <?php foreach ($sizes as $size) : ?>
+                        <li><?php echo $size; ?></li>
+                    <?php endforeach; ?>
                 </ul>
             </div>
         </div>

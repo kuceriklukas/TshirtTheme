@@ -229,6 +229,12 @@ select, button {
     max-width: 1000px;
     text-align: center;
 }
+
+.itemsWrap > p {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
 .item-wrapper {
     display: inline-block;
     width: 130px;
@@ -281,6 +287,7 @@ select, button {
     display: inline-block;
     width: 100%;
     height: auto;
+    text-align: center;
 }
 
 .detailLeft > img {
