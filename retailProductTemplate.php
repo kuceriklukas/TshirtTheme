@@ -8,6 +8,10 @@
 <?php
 	get_header('retail');
 
+    $queryString = $_SERVER['QUERY_STRING'];
+	$array = explode('=', $queryString);
+	$category = $array[1];
+ 
     $pageArgs = array(
         'post_type' => 'page',
         'posts_per_page' => 1,
@@ -24,6 +28,9 @@
         $detailsPageName = $detailsPage->posts[0]->post_name;
         $urlArray = explode('/', get_page_link());
         //$urlArray = array_filter($urlArray); 
+        if (end($urlArray) == "") {
+            array_pop($urlArray);
+        }
         array_pop($urlArray);
         $urlString = implode('/',$urlArray).'/';
         $urlString = $urlString . $detailsPageName;
@@ -79,7 +86,7 @@
                     endwhile;
                     endif;
 
-                    $args = array( 'post_type' => 'tshirtdesign', 'posts_per_page' => 10 );
+                    $args = array( 'post_type' => 'tshirtdesign', 'posts_per_page' => 10, 'cat' => $category );
                     $query = new WP_Query( $args );
                     foreach ($query->posts as $post) :
 

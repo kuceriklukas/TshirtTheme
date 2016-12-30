@@ -1,5 +1,6 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #212121;
 }
 
 h1 {
@@ -67,22 +68,23 @@ select, button {
 .caption{
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 35%;
     width: 100%;
     text-align: center;
     color: #000;
-    
-    
-   
 }
 .caption span{
-    background-color: #111;
+    background-color: #212121;
     color: #fff;
     width: 100%;
     padding: 18px;
     font-size: 25px;
     letter-spacing: 10px;
     line-height: 70px;
+}
+.detail-contact {
+    padding: 0; 
+    overflow: hidden;
 }
 
 .over1{
@@ -115,24 +117,35 @@ select, button {
     background-size: cover;
 }
 .over2{
-    width: 100%;
+    width: calc(100% - 40px);
     color: #777;
     background-color: white;
     text-align: center;
-    padding: 20px 0;
-    min-height: 300px;
+    padding: 30px 20px;
     position: relative;
     display: block;
+    min-height: 150px;
 }
+
+.over2 a {
+    text-decoration: none;
+    color: #212121;
+    display: inline-block;
+}
+
 .products{
     width: 225px;
     display: inline-block;
     margin: 10px 10px 10px 10px;
     height: auto;
     padding: 15px;
-    border-radius: 10px;
-    border: 1px solid #d7d7d7;     
+    background-color: #e3e3e3;
 }
+
+.products:hover {
+    background-color: #d7d7d7;
+}
+
 .bigImg3{
     min-height: 100vh;
     position: relative;
@@ -143,24 +156,29 @@ select, button {
     background-size: cover;
 }
 .footer{
-    background-color: lightgray; 
+    background-color: #212121; 
     overflow: hidden;
     height: auto;
     display: block;
     width: 100%; 
+    font-size: 14px;
 }
+
+.footer p {
+    padding: 0 10px;
+}
+
 .footLeft, .footRight{ 
     display: block;
-    border-top: 2px solid #fff;
     width: 100%;
     min-height: 120px;
     text-align: center;
-    color: darkslategrey;
+    color: #777;
 }
 .footer h1{
     text-align: center;
-    color: darkslategrey;
-    line-height: 35px;
+    color: #777;
+    line-height: 30px;
     font-size: 28px;
 }
 .products img{
@@ -174,7 +192,7 @@ select, button {
 /* PRODUCTS PAGE  */
 
 .navigate{
-    background-color: #000;
+    background-color: #212121;
     height: auto;
 }
 
@@ -187,15 +205,12 @@ select, button {
 .navigate li{
     display: inline-block;
     margin: 0;
-    font-size: 18px;
     width: 100%;
 }
 .navigate li > a {
-    color: #fff;
+    color: #AFAFAF;
     text-decoration: none;
-}
-.navigate li > a:hover {
-    color: #777;
+    font-size: 14px;
 }
 
 .bigImgProducts{
@@ -211,8 +226,8 @@ select, button {
     
 }
 .over1B{
-    color: #777;
-    background-color:rgba(245, 245, 245, 0.5);
+    color: #212121;
+    background-color: #fff;
     
     padding: 50px 0;
     height: auto;
@@ -239,10 +254,9 @@ select, button {
     display: inline-block;
     width: 130px;
     padding: 20px 10px;
-    border: 1px solid #d7d7d7;
+    background-color: #e3e3e3;
     margin: 10px 5px;
     vertical-align: top;
-    border-radius: 10px;
 }
 
 .item-wrapper > h3 {
@@ -268,7 +282,7 @@ select, button {
     color: #000;
 }
 .captionProducts span{
-    background-color: red;
+    background-color: #212121;
     color: #fff;
     padding: 10px;
     font-size: 25px;
@@ -280,8 +294,9 @@ select, button {
 
 .detailWrap{
     display: block;
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
+    padding: 15px;
+    background-color: #fff;
 }
 .detailLeft{
     display: inline-block;
@@ -299,8 +314,8 @@ select, button {
 }
 .detailRight{
     display: inline-block;
-    margin-left: 20px;
-    width: 100%;
+    padding: 10px 15px;
+    width: calc(100% - 30px);
 }
 .btn-group{
     display: flex;
@@ -324,18 +339,17 @@ select, button {
     }
 
     .navigate{
-        height: 70px;
+        height: 50px;
     }
 
     .navigate ul{   
-        line-height: 70px;
-        padding: 0 0 0 40px;
+        line-height: 50px;
+        padding: 0 0 0 10px;
     }
 
     .navigate li{
-        margin-right: 10px;
         width: auto;
-        padding: 0 0 0 40px;
+        padding: 0 10px 0 10px;
     }
 
     .caption span {
@@ -350,7 +364,7 @@ select, button {
 
     .detailRight{
         vertical-align: top;
-        width: calc(49% - 20px);
+        width: calc(49% - 30px);
     }
 
     .over1 {
@@ -366,7 +380,7 @@ select, button {
     }
 
     .item-wrapper:hover {
-        border: 1px solid #929292;
+        background-color: #d7d7d7;
     }
 
     .over1Left{
@@ -378,20 +392,19 @@ select, button {
     }
 
     .footLeft, .footRight {
-        width: calc(50% - 1px);
-        border-top: 2px solid #fff;
+        width: 50%;
     }
 
     .footLeft {
         float: left;
-        border-right: 1px solid #fff;
     }
 
     .footRight {
-        float: right;
-        border-left: 1px solid #fff;
+        float: right;      
     }
+
+    .navigate li:hover {
+        background-color: #000;
+    }
+
 }
-
-
-

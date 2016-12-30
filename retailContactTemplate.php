@@ -7,11 +7,7 @@
     get_header("retail");
 ?>
     <div class="container detailWrap">
-        <div class="detailLeft">
-            <h1>The map</h1>
-            <p>Ueeeeej the map will be hereee</p>
-        </div>
-        <div class="detailRight">
+        <div class="detail-contact">
              <?php if (have_posts()): 
                 while (have_posts()): the_post(); ?>
                     <h1><?php the_title(); ?></h1>

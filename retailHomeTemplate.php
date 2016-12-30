@@ -52,6 +52,30 @@
     else {
         $imageRetailParallax3 = $imagesUrl . "retail-parallax-3-default.jpg";
     }
+
+    $pageArgs = array(
+        'post_type' => 'page',
+        'posts_per_page' => 1,
+        'meta_query' => array(
+            array(
+                'key' => '_wp_page_template',
+                'value' => 'retailProductTemplate.php'
+            )
+        )
+    );
+    $productPage = new WP_Query($pageArgs);
+    $urlString = "";
+    if (count($productPage->posts) == 1) {
+        $productPageName = $productPage->posts[0]->post_name;
+        $urlArray = explode('/', get_page_link());
+        //$urlArray = array_filter($urlArray); 
+        if (end($urlArray) == "") {
+            array_pop($urlArray);
+        }
+        array_pop($urlArray);
+        $urlString = implode('/',$urlArray).'/';
+        $urlString = $urlString . $productPageName;
+    }
 ?>
     <body class="bdy">
         <div class="bigImg1" style="background-image: url('<?php echo $imageRetailParallax1; ?>');">
@@ -84,21 +108,32 @@
             </div>
         </div>
         <div class="over2">
-            <div class="products">
-                <a href="http://localhost/TShirtShop/retailproducts/">
-                   <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/Penguins.jpg"> 
-                </a>
-                <h3>T-shirts</h3>
-                    
-            </div>
-            <div class="products">
+            <?php 
+                $categories = get_categories();
+
+                foreach ($categories as $category) :
+                if ($category->slug == "uncategorised") {
+                    continue;
+                }        
+            ?>
+            <a href="<?php echo $urlString . "?category=" . $category->cat_ID; ?>">
+                <div class="products">
+                    <h3><?php echo $category->name; ?></h3>       
+                    <p><?php echo $category->description ?></p>     
+                </div>
+            </a>
+
+            <?php 
+                endforeach;
+            ?>
+            <!--<div class="products">
                 <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/Penguins.jpg">
                 <h3>Bags</h3>
             </div>
             <div class="products">
                 <img src="http://localhost/TShirtShop/wp-content/uploads/2016/12/Penguins.jpg">
                 <h3>Sweat shirts</h3>
-            </div>
+            </div>-->
         </div>
         <div class="bigImg3" style="background-image: url('<?php echo $imageRetailParallax3; ?>');">
             <div class="caption">

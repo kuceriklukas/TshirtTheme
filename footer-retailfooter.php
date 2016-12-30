@@ -1,11 +1,10 @@
         <div class="footer">
             <div class="footLeft">
-                <h1>About the company</h1>
-                <p>This should be editable from WordPress</p>
-                <p>Pretty much all of this</p>
+                <h1><?php bloginfo("name"); ?></h1>
+                <p>Varsion <?php bloginfo("version"); ?></p>
             </div>
             <div class="footRight">
-                <h1>T-shirt Theme</h1>
+                <p><?php bloginfo("description"); ?></p>
                 <p>© Copyright 2016. All Rights Reserved.</p>
             </div>
         </div>

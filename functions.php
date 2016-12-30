@@ -34,6 +34,9 @@
 	add_theme_support('custom-background');
 	//add_theme_support('custom-header');
 
+
+
+
 ?>
 
 

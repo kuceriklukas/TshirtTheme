@@ -17,11 +17,12 @@
     $colors = get_field( "colour", $id );
     $post = get_post($id);
 ?>
+        <div class="details">
             <div class="details1">
                 <div>
                     <img src="<?php echo $image; ?>">
                 </div>
-                <h1>Available Colours</h1>
+                <h2>Available Colours</h2>
                 <div class="availableColours">   
                     <?php foreach ($colors as $color) : ?>           
                         <div class="cols" style="background-color: <?php echo $color; ?>"></div>
@@ -29,11 +30,11 @@
                 </div>
             </div>
             <div class="details2">
-                <h1><?php echo $post -> post_title; ?></h1>
+                <h2><?php echo $post -> post_title; ?></h2>
                 <p><?php echo $post -> post_content; ?></p>
                
                 
-                <h1>Available sizes</h1>
+                <h2>Available sizes</h2>
                 <ul>
                     <?php foreach ($sizes as $size) : ?>
                         <li><?php echo $size; ?></li>
