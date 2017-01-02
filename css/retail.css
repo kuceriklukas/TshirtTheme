@@ -259,6 +259,10 @@ select, button {
     vertical-align: top;
 }
 
+.item-wrapper-details {
+    max-width: 150px;
+}
+
 .item-wrapper > h3 {
     font-weight: normal;
     font-size: 17px;
@@ -323,6 +327,13 @@ select, button {
 .colours{
     display: block;
 }
+
+.you-may-like {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+
 .itemColour{
     width:  70px;
     height: 70px;
@@ -377,6 +388,10 @@ select, button {
 
     .item-wrapper h3 {
         font-size: 20px;
+    }
+
+    .item-wrapper-details h3 {
+        font-size: 17px;
     }
 
     .item-wrapper:hover {

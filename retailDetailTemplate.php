@@ -41,6 +41,24 @@
                     <?php endforeach; ?>
                 </div>
                 <button type="button" class="btn btn-default btn-lg" id="buyBtn">BUY</button>
+                <h3>You may also like</h3>
+                <div class="you-may-like">
+                    <?php
+                        $myposts = get_posts( 'post_type=tshirtdesign&numberposts=3&orderby=rand' );
+                        foreach( $myposts as $post ) : setup_postdata($post); 
+                            $image = get_field( "image_url", $post->ID);                                
+                    ?>
+                            <div class="item-wrapper item-wrapper-details">
+                                <a href="<?php the_permalink(); ?>">
+                                    <div class="items">
+                                        <img src="<?php echo $image; ?>">
+                                    </div>
+                                </a>
+                                <h3><?php the_title(); ?></h3>
+                            </div>
+
+                        <?php endforeach; ?>              
+                </div>
             </div>
         </div>
     <?php

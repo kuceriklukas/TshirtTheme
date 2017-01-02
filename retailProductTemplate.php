@@ -115,7 +115,7 @@
         </div>
         <div class="over2">
             <div class="caption">
-                <span> Hope you like</span>   
+                <span> Hope you like our page</span>   
             </div>  
         </div> 
         <div class="bigImgProducts" style="background-image: url('<?php echo $imageRetailParallax3; ?>');"> 
