@@ -47,8 +47,8 @@
                 <h3>You may also like</h3>
                 <div class="you-may-like">
                     <?php
-                        $myposts = get_posts( 'post_type=tshirtdesign&numberposts=3&orderby=rand' );
-                        foreach( $myposts as $post ) : setup_postdata($post); 
+                        $randomPosts = get_posts( 'post_type=tshirtdesign&numberposts=3&orderby=rand' );
+                        foreach( $randomPosts as $post ) : setup_postdata($post); 
                             $image = get_field( "image_url", $post->ID);                                
                     ?>
                             <div class="item-wrapper item-wrapper-details">
