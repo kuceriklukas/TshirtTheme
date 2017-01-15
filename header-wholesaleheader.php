@@ -12,6 +12,7 @@
                 
                 <div class="header">
                     <?php
+                    //get the right links to 
                         $pageTemplate = basename(get_page_template());
                         $urlString = "";
                         if ($pageTemplate == "wholesaleHomeTemplate.php") {
@@ -60,20 +61,22 @@
 
                     ?>
                     <img src="<?php echo $imageWholesaleLogo; ?>"> 
+                    <!-- get the menu displayed on the page -->
                     <?php wp_nav_menu(array('theme_location'=>'wholesale')); ?>
 
                     <p>Filters:</p>
                     <ul>
                     <?php 
+                        //display the category filters
                         $categories = get_categories();
 
                         foreach ($categories as $category) :
-                        if ($category->slug == "uncategorised") {
+                        if ($category->slug == "uncategorised" || $category->slug == "uncategorized") {
                             continue;
                         }  
                     ?>
                     <li>
-                        <a href="<?php echo $urlString . '?category=' . $category->cat_ID; ?>"><?php echo $category->name; ?></a>
+                        <a href="<?php echo $urlString . '/?category=' . $category->cat_ID; ?>"><?php echo $category->name; ?></a>
                     </li>
                     <?php endforeach; ?>
                     </ul>

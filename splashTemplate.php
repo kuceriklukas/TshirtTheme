@@ -7,7 +7,7 @@
 <?php
 	get_header('retailhome');
 ?>
-    <body class="splashBody">  
+    <body class="splashBody"> 
         <div class="splashIt">
             <?php
                 $imagesUrl = get_template_directory_uri() . "/images/"; 
@@ -32,6 +32,7 @@
                 else {
                     $imageRightUrl = $imagesUrl . "splash-right-default.jpg";
                 }
+
 
                 $menu_name = 'splashpage';
                 $locations = get_nav_menu_locations();

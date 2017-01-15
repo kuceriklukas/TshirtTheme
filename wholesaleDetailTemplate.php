@@ -30,7 +30,7 @@
                 </div>
             </div>
             <div class="details2">
-                <h2><?php echo $post -> post_title; ?></h2>
+                <h1><?php echo $post -> post_title; ?></h1>
                 <p><?php echo $post -> post_content; ?></p>
                
                 

@@ -112,11 +112,11 @@
                 $categories = get_categories();
 
                 foreach ($categories as $category) :
-                if ($category->slug == "uncategorised") {
+                if ($category->slug == "uncategorised" || $category->slug == "uncategorized") {
                     continue;
                 }        
             ?>
-            <a href="<?php echo $urlString . "?category=" . $category->cat_ID; ?>">
+            <a href="<?php echo $urlString . "/?category=" . $category->cat_ID; ?>">
                 <div class="products">
                     <h3><?php echo $category->name; ?></h3>       
                     <p><?php echo $category->description ?></p>     

@@ -13,6 +13,7 @@ h2 {
     color: #2F4F4F;
     font-size: 30px;
     font-weight: normal;
+    margin-top: 10px;
 }
 
 h3 {
@@ -24,9 +25,19 @@ h3 {
 select, button {
     font-size: 15px;
     min-width: 100px;
-    padding: 5px;
+    border-radius: 8px;
+}
+
+button {
+    background-color: #AFAFAF;
+    color: #212121;
+    border: 1px solid #777;
+    padding: 5px 40px;
+}
+
+select {
     border: 1px solid #AFAFAF;
-    border-radius: 5px;
+    padding: 5px;
 }
 
 /* RETAIL HOME */ 
@@ -254,7 +265,7 @@ select, button {
     display: inline-block;
     width: 130px;
     padding: 20px 10px;
-    background-color: #e3e3e3;
+    background-color: #f1f1f1;
     margin: 10px 5px;
     vertical-align: top;
 }
@@ -298,28 +309,35 @@ select, button {
 
 .detailWrap{
     display: block;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
     padding: 15px;
-    background-color: #fff;
+    background-color: #f1f1f1;
 }
 .detailLeft{
+    padding: 10px;
+    background-color: #fff;
     display: inline-block;
-    width: 100%;
+    width: calc(100% - 20px);
     height: auto;
     text-align: center;
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 8px #AFAFAF;
 }
 
 .detailLeft > img {
-    max-width: 100%;
+    max-width: calc(100% - 20px);
 }
 
 #navBtns a{
 	padding-right: 8px;
 }
 .detailRight{
+    background-color: #fff;
     display: inline-block;
     padding: 10px 15px;
     width: calc(100% - 30px);
+    margin-bottom: 15px;
+    box-shadow: 3px 3px 8px #AFAFAF;
 }
 .btn-group{
     display: flex;
@@ -370,12 +388,13 @@ select, button {
     }
 
     .detailLeft{
-        width: 50%;
+        width: calc(50% - 20px);
+        margin-right: 15px;
     }
 
     .detailRight{
         vertical-align: top;
-        width: calc(49% - 30px);
+        width: calc(50% - 50px);
     }
 
     .over1 {
@@ -395,7 +414,7 @@ select, button {
     }
 
     .item-wrapper:hover {
-        background-color: #d7d7d7;
+        background-color: #e3e3e3;
     }
 
     .over1Left{

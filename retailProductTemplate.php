@@ -96,7 +96,7 @@
                     <?php 
                         $detailsPageLink = "";
                         if ($urlString != "") {
-                            $detailsPageLink = $urlString . '?product_id=' . $post->ID;
+                            $detailsPageLink = $urlString . '/?product_id=' . $post->ID;
                         } 
                     ?>
                     <a href="<?php echo $detailsPageLink; ?>">

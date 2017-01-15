@@ -11,6 +11,9 @@
 	$queryString = $_SERVER['QUERY_STRING'];
 	$array = explode('=', $queryString);
 	$id = $array[1];
+
+    $currentUrl = "//".$_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'];
+    $currentUrl = esc_url(remove_query_arg('product_id'));
 	
 	$image = get_field( "image_url", $id );
 	$price = get_field( "price", $id );
@@ -49,7 +52,7 @@
                             $image = get_field( "image_url", $post->ID);                                
                     ?>
                             <div class="item-wrapper item-wrapper-details">
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="<?php echo $currentUrl . "?product_id=" . $post->ID; ?>">
                                     <div class="items">
                                         <img src="<?php echo $image; ?>">
                                     </div>
